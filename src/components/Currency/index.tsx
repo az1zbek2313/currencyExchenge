@@ -94,7 +94,7 @@ const Currency:FC<objProps> = ({setQuant1, setQuant2, setChanges, setVal}) => {
     
     
     console.log(currencyValues);
-    const qiymat = currencyValues && currencyValues.find((el:any, index:number) => index === country)    
+    const qiymat = currencyValues && currencyValues.find((el:any, index:number) => el && index === country)    
         
 
     

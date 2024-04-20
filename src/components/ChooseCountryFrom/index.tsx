@@ -15,6 +15,7 @@ interface CurrencyProps {
   function handleChange(e: React.SyntheticEvent<Element, Event>, value: qauntProps | null) {
     setValueFrom(value?.currency.code);
     localStorage.setItem("currencyFrom", JSON.stringify(value?.currency.code));
+    console.log(e);
   }
 
   return (
